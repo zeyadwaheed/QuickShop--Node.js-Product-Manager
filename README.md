@@ -35,6 +35,3 @@ This project is a simple shopping cart system built using Node.js, Express, and 
 1. Open the `index.html` file in your browser.
 2. The frontend will interact with the backend APIs to manage the product list.
 
----
-
-Feel free to customize this `README.md` file with additional details or instructions specific to your setup or use case.
