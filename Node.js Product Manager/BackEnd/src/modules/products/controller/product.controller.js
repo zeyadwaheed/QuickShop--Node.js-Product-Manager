@@ -1,5 +1,7 @@
 import mysql from 'mysql2'
 import query from '../../../../database/connection.js'
+
+
 export const getProducts = (req,res)=>{
     query.execute("select * from products",(error,data)=>{
         res.json({message:"success",data})
@@ -40,7 +42,7 @@ export const updateProduct = (req,res)=>{
     })
 }
 
-export const deleteProduct = (req,res)=>{const { groups: { extension } } = 'file.txt'.match(/\.(?<extension>\w+)/)
+export const deleteProduct = (req,res)=>{
     let{id} = req.body;
     delete_query = query.execute(`delete from products where id = "${id}"`,(err,data)=>{
         if(err){
